@@ -20,7 +20,7 @@ h2 {
   color: #fff;
   position: absolute;
   z-index: 12;
-  top: 40%;
+  top: 35%;
   width: 50vw;
   text-align: center; }
   .overlay span {
@@ -224,5 +224,27 @@ h3 span {
     font-size: 18px; }
 .modal-content #btns button {
   border-radius: 2px; }
+
+section .carousel-control-prev {
+  left: -173px;
+  background-color: black; }
+section .carousel-control-next {
+  background-color: black; }
+section .main {
+  margin-left: 173px;
+  margin-bottom: 50px; }
+  section .main img {
+    width: 150px !important;
+    height: 200px;
+    padding: 0; }
+section h2 {
+  color: #33BF3A;
+  margin-left: 23px; }
+
+@media (max-width: 465px) {
+  section {
+    background-color: red; }
+    section #carouselExampleControls img {
+      margin-right: 150px; } }
 
 /*# sourceMappingURL=style.css.map */
