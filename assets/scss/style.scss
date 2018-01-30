@@ -322,12 +322,13 @@ section{
 				background-color: transparent !important;
 			}
 		.search{
-			width: 300px !important;
-			margin-left: 0 !important;
+			width: 200px !important;
+			margin-left: 50px !important;
 			input{
 				padding-right: 50px;
 			}
 		}
+		.nav-item a{background-color: transparent !important;}
 	}
 	.overlay{
 		height: auto;
@@ -352,11 +353,25 @@ section{
 		}
 	}	
 	section{
-		background-color:red;
 		#carouselExampleControls{
-			img{
-				margin-right: 150px;
+		}
+	}
+	
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+	nav{
+		.nav-link{
+				background-color: transparent !important;
+			}
+		.search{
+			width: 200px !important;
+			margin-left: 365px !important;
+			input{
+				padding-right: 50px;
 			}
 		}
+		.nav-item a{background-color: transparent !important;}
 	}
 }

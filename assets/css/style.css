@@ -248,10 +248,12 @@ section h2 {
   nav .nav-link {
     background-color: transparent !important; }
   nav .search {
-    width: 300px !important;
-    margin-left: 0 !important; }
+    width: 200px !important;
+    margin-left: 50px !important; }
     nav .search input {
       padding-right: 50px; }
+  nav .nav-item a {
+    background-color: transparent !important; }
 
   .overlay {
     height: auto; }
@@ -268,11 +270,16 @@ section h2 {
     .overlay p {
       font-size: 10px !important; }
     .overlay input {
-      margin-left: 28% !important; }
-
-  section {
-    background-color: red; }
-    section #carouselExampleControls img {
-      margin-right: 150px; } }
+      margin-left: 28% !important; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  nav .nav-link {
+    background-color: transparent !important; }
+  nav .search {
+    width: 200px !important;
+    margin-left: 365px !important; }
+    nav .search input {
+      padding-right: 50px; }
+  nav .nav-item a {
+    background-color: transparent !important; } }
 
 /*# sourceMappingURL=style.css.map */
