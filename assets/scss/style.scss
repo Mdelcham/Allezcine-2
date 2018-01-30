@@ -1,4 +1,4 @@
-@import "color";
+$color-jumbo: #33BF3A;
 
 h2{
 	color:white;
@@ -291,22 +291,30 @@ h3{
 
 
 // FIN header
-section{
+/*section{
 	.carousel-control-prev{
-		left:-173px;
+        width: 10%;
 		background-color: black;
 	}
 	.carousel-control-next{
+        width: 10%;
 		background-color: black;
 	}
 	.main{
-		margin-left: 173px;
+        width: 100%;
 		margin-bottom: 50px;
 		img{
 			width: 150px !important;
 			height: 200px;
 			padding: 0;
+            margin: 0 5px;
 		}
+        .carousel-inner {
+            .carousel-item {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
 	}
 	h2{
 		color: $color-jumbo;
@@ -315,6 +323,17 @@ section{
 	#tonDiv{
 		display:none;
 	}
+}*/
+
+#sliderFilms {
+    display: flex;
+    justify-content: space-between;
+    width: 99vw;
+    overflow: hidden;
+    img {
+        width: 150px !important; 
+        height: 240px;
+    }
 }
 
 // MEDIAQUERIES
@@ -361,9 +380,7 @@ section{
 	}
 	
 }
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
 	nav{
 		.nav-link{
 				background-color: transparent !important;

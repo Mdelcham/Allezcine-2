@@ -228,23 +228,47 @@ h3 span {
 .modal-content #btns button {
   border-radius: 2px; }
 
-section .carousel-control-prev {
-  left: -173px;
-  background-color: black; }
-section .carousel-control-next {
-  background-color: black; }
-section .main {
-  margin-left: 173px;
-  margin-bottom: 50px; }
-  section .main img {
+/*section{
+	.carousel-control-prev{
+        width: 10%;
+		background-color: black;
+	}
+	.carousel-control-next{
+        width: 10%;
+		background-color: black;
+	}
+	.main{
+        width: 100%;
+		margin-bottom: 50px;
+		img{
+			width: 150px !important;
+			height: 200px;
+			padding: 0;
+            margin: 0 5px;
+		}
+        .carousel-inner {
+            .carousel-item {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+	}
+	h2{
+		color: $color-jumbo;
+		margin-left: 23px;
+	}
+	#tonDiv{
+		display:none;
+	}
+}*/
+#sliderFilms {
+  display: flex;
+  justify-content: space-between;
+  width: 99vw;
+  overflow: hidden; }
+  #sliderFilms img {
     width: 150px !important;
-    height: 200px;
-    padding: 0; }
-section h2 {
-  color: #33BF3A;
-  margin-left: 23px; }
-section #tonDiv {
-  display: none; }
+    height: 240px; }
 
 @media (max-width: 475px) {
   nav .nav-link {
