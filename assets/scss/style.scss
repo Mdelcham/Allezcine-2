@@ -316,8 +316,11 @@ section{
 
 // MEDIAQUERIES
 
-@media(max-width:465px){
+@media(max-width:475px){
 	nav{
+		.nav-link{
+				background-color: transparent !important;
+			}
 		.search{
 			width: 300px !important;
 			margin-left: 0 !important;
@@ -356,5 +359,4 @@ section{
 			}
 		}
 	}
-
 }

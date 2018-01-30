@@ -14,38 +14,6 @@ h2 {
     width: 100vw;
     height: 600px; }
 
-.overlay {
-  font-family: 'Anton', sans-serif;
-  margin-left: 25%;
-  color: #fff;
-  position: absolute;
-  z-index: 12;
-  top: 40%;
-  width: 50vw;
-  text-align: center; }
-  .overlay span {
-    color: #33BF3A; }
-  .overlay h3 {
-    color: white;
-    font-size: 50px; }
-  .overlay h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    letter-spacing: 2px; }
-  .overlay .quote {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    letter-spacing: 2px; }
-  .overlay input {
-    background-color: #33BF3A;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    font-size: 12px;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    margin-left: 43%; }
-
 .lay {
   position: absolute;
   z-index: 12;
@@ -77,6 +45,39 @@ h2 {
         background-color: rgba(255, 255, 255, 0.7); }
         .lay ul .search input ::placeholder {
           color: black; }
+  .lay .overlay {
+    font-family: 'Anton', sans-serif;
+    margin-left: 25%;
+    color: #fff;
+    position: absolute;
+    z-index: 12;
+    margin-top: 150px;
+    width: 50vw;
+    text-align: center; }
+    .lay .overlay span {
+      color: #33BF3A;
+      font-size: 50px;
+      font-weight: normal; }
+    .lay .overlay h3 {
+      color: white;
+      font-size: 50px; }
+    .lay .overlay h4 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px; }
+    .lay .overlay .quote {
+      font-family: 'Raleway', sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px; }
+    .lay .overlay input {
+      background-color: #33BF3A;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      font-size: 12px;
+      padding: 5px 10px 5px 10px;
+      text-align: center;
+      margin-left: 43%; }
 
 .last a {
   background-color: transparent !important; }
@@ -88,7 +89,6 @@ h2 {
     background-color: transparent !important; }
   .nav-item a {
     padding: 5px;
-    background-color: #33BF3A;
     margin-right: 5px;
     color: white !important;
     border-radius: 2px; }
@@ -213,9 +213,11 @@ h3 span {
   color: #33BF3A;
   font-family: 'Anton', sans-serif; }
 
-#deroule a {
-  color: #33BF3A !important;
-  background-color: white; }
+#deroule {
+  box-shadow: 5px 5px 8px #888888; }
+  #deroule a {
+    color: #33BF3A !important;
+    background-color: white; }
 
 .modal-content h3 {
   font-family: 'Anton', sans-serif;
@@ -224,5 +226,50 @@ h3 span {
     font-size: 18px; }
 .modal-content #btns button {
   border-radius: 2px; }
+
+section .carousel-control-prev {
+  left: -173px;
+  background-color: black; }
+section .carousel-control-next {
+  background-color: black; }
+section .main {
+  margin-left: 173px;
+  margin-bottom: 50px; }
+  section .main img {
+    width: 150px !important;
+    height: 200px;
+    padding: 0; }
+section h2 {
+  color: #33BF3A;
+  margin-left: 23px; }
+
+@media (max-width: 375px) {
+  nav .search {
+    width: 300px !important;
+    margin-left: 0 !important; }
+    nav .search input {
+      padding-right: 50px; }
+
+  .overlay {
+    height: auto; }
+    .overlay h3 {
+      font-size: 30px !important;
+      width: 300px;
+      margin-left: -50px;
+      margin-top: -25px; }
+      .overlay h3 span {
+        font-size: 30px !important; }
+    .overlay h4 {
+      font-size: 10px !important;
+      width: 200px; }
+    .overlay p {
+      font-size: 10px !important; }
+    .overlay input {
+      margin-left: 28% !important; }
+
+  section {
+    background-color: red; }
+    section #carouselExampleControls img {
+      margin-right: 150px; } }
 
 /*# sourceMappingURL=style.css.map */
