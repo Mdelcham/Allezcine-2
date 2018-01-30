@@ -243,6 +243,8 @@ section .main {
 section h2 {
   color: #33BF3A;
   margin-left: 23px; }
+section #tonDiv {
+  display: none; }
 
 @media (max-width: 475px) {
   nav .nav-link {
