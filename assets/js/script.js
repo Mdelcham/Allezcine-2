@@ -1,4 +1,5 @@
 //Films
+
 $(document).ready(function() {
 // load images et descriptions
 var affiche = [
@@ -360,7 +361,8 @@ var afficheS = [
             genre: "comedie",
             url: "https://www.youtube.com/embed/kgNkGohA20k",
             about: "bla1",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Avatar',
@@ -369,7 +371,8 @@ var afficheS = [
             genre: "thriller",
             url: "https://www.youtube.com/embed/nm-wiB60nHs",
             about: "bla2",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Avengers',
@@ -378,7 +381,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/6ZfuNTqbHE8",
             about: "bla3",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'SpongeBob squarepants',
@@ -387,7 +391,8 @@ var afficheS = [
             genre: "comedie",
             url: "https://www.youtube.com/embed/1WwAodx7jhw",
             about: "bla4",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Saint Seiya',
@@ -396,7 +401,8 @@ var afficheS = [
             genre: "dramatique",
             url: "https://www.youtube.com/embed/L3Z0GFMjR5E",
             about: "bla5",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Danny Phantom',
@@ -405,7 +411,8 @@ var afficheS = [
             genre: "thriller",
             url: "https://www.youtube.com/embed/TINGlq_KdRU",
             about: "bla6",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Dragon Ball',
@@ -414,7 +421,8 @@ var afficheS = [
             genre: "thriller",
             url: "https://www.youtube.com/embed/aOPJ6y3HWII",
             about: "bla7",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Family Guy',
@@ -423,7 +431,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/wwoq3o_yNMw",
             about: "bla8",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Futurama',
@@ -432,7 +441,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/FJM2F1jX_c4",
             about: "bla9",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Goldorak',
@@ -441,7 +451,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/_B3Qh6NDQ4I",
             about: "bla10",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Young Justice',
@@ -450,7 +461,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/UMs6_QOV10g",
             about: "bla11",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'La maison de Mickey',
@@ -459,7 +471,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/XO9rqIgzDL0",
             about: "bla12",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Oggy et les Cafards',
@@ -468,7 +481,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/hZu6YrlGe0s",
             about: "bla13",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Odd Parents',
@@ -477,7 +491,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/ymmsQ3MOshg",
             about: "bla14",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Phineas and Ferb',
@@ -486,7 +501,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/th9hxCGH_ms",
             about: "bla15",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Pokemon',
@@ -495,7 +511,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/Pnc7dk8l-Q0",
             about: "bla16",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Batman La Releve',
@@ -504,7 +521,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/xK6ajefLhcU",
             about: "bla17",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Les Simpson',
@@ -513,7 +531,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/8arbBxezySc",
             about: "bla18",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Gravity Falls',
@@ -522,7 +541,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/0PYzpK-xa6c",
             about: "bla19",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Ultimate Spiderman',
@@ -531,7 +551,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/nyMKJcnWh4k",
             about: "bla20",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'Starwars',
@@ -540,7 +561,8 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/Q0CbN8sfihY",
             about: "bla21",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         },
         {
             title: 'X-men',
@@ -549,10 +571,10 @@ var afficheS = [
             genre: "scifi",
             url: "https://www.youtube.com/embed/I8BobmZglOk",
             about: "bla22",
-            price: 2
+            price: 2,
+            add: "Add to basket"
         }
 ];
-    
     
     //Slider images generator
     $("#sliderSeries ul").html(function(){
@@ -563,23 +585,40 @@ var afficheS = [
 
 //First description display
     $("#description2").html(function() {
-        $("#description2").append("<iframe width='560' height='315' src='"+afficheS[0].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='infos'><h4 id='filmName'>"+afficheS[0].title+"</h4><p><span>Story Line: </span>"+afficheS[0].about+"</p><p><span>Release on: </span>"+afficheS[0].date+"</p><p><span>Genres: </span>"+afficheS[0].genre+"</p><p><span>Price: </span>"+afficheS[0].price+"</p></div>"
+        $("#description2").append("<iframe width='560' height='315' src='"+afficheS[0].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='infos'><h4 id='filmName'>"+afficheS[0].title+"</h4><p><span>Story Line: </span>"+afficheS[0].about+"</p><p><span>Release on: </span>"+afficheS[0].date+"</p><p><span>Genres: </span>"+afficheS[0].genre+"</p><p><span>Price: </span>"+afficheS[0].price+"</p><p class='add'>"+afficheS[0].add+"</p></div>"
         );
+        //Clic add
+/*        $(".add").click(function() {
+            
+            let p = $(this).parent();
+            let c = p[0].childNodes[0];
+            console.log(c.textContent);
+            for (var j=0; j < afficheS.length; j++) {
+                if(c.textContent == afficheS[j].title) {
+                    $(".product").append("<img src="+afficheS[j].src+" alt=''><p><span>Story Line: </span>"+afficheS[j].about+"</p><p class='quantity'>"counter++"</p><p><span>Price: </span>"+afficheS[j].price+"</p>");
+                }
+            }
+         });*/
     });
+    
 
 //Clic image generation trailer
     $("#sliderSeries ul li img").click(function(){
-        console.log($(this).attr("src"));
                 for (i=0 ; i < afficheS.length; i++) {
                     if ($(this).attr("src") == afficheS[i].src) {
                         $("#description2").html(" ");
-                        $("#description2").append("<iframe width='560' height='315' src='"+afficheS[i].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='infos'><h4 id='filmName'>"+afficheS[i].title+"</h4><p><span>Story Line: </span>"+afficheS[i].about+"</p><p><span>Release on: </span>"+afficheS[i].date+"</p><p><span>Genres: </span>"+afficheS[i].genre+"</p><p><span>Price: </span>"+afficheS[i].price+"</p></div>"
+                        $("#description2").append("<iframe width='560' height='315' src='"+afficheS[i].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='infos'><h4 id='filmName'>"+afficheS[i].title+"</h4><p><span>Story Line: </span>"+afficheS[i].about+"</p><p><span>Release on: </span>"+afficheS[i].date+"</p><p><span>Genres: </span>"+afficheS[i].genre+"</p><p><span>Price: </span>"+afficheS[i].price+"</p><p class='add'>"+afficheS[i].add+"</p></div>"
                         );
                     }
                     
                 }
+        /*$(".add").click(function() {
+            let p = $(this).parent();
+            let c = p[0].childNodes[0];
+            console.log(c.textContent);
+         });*/
     });
-    
+
 // slider buttons    
     let carousel = $("#sliderSeries ul");
     let carouselChild = carousel.find('li');
@@ -613,15 +652,19 @@ var afficheS = [
         
         //Clic image generation trailer
         $("#sliderSeries ul li img").click(function(){
-            console.log($(this).attr("src"));
                     for (i=0 ; i < afficheS.length; i++) {
                         if ($(this).attr("src") == afficheS[i].src) {
                             $("#description2").html(" ");
-                            $("#description2").append("<iframe width='560' height='315' src='"+afficheS[i].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='infos'><h4 id='filmName'>"+afficheS[i].title+"</h4><p><span>Story Line: </span>"+afficheS[i].about+"</p><p><span>Release on: </span>"+afficheS[i].date+"</p><p><span>Genres: </span>"+afficheS[i].genre+"</p><p><span>Price: </span>"+afficheS[i].price+"</p></div>"
+                            $("#description2").append("<iframe width='560' height='315' src='"+afficheS[i].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='infos'><h4 id='filmName'>"+afficheS[i].title+"</h4><p><span>Story Line: </span>"+afficheS[i].about+"</p><p><span>Release on: </span>"+afficheS[i].date+"</p><p><span>Genres: </span>"+afficheS[i].genre+"</p><p><span>Price: </span>"+afficheS[i].price+"</p><p id='add'>"+afficheS[i].add+"</p></div>"
                             );
                         }
 
                     }
+            /*$(".add").click(function() {
+                let p = $(this).parent();
+                let c = p[0].childNodes[0];
+                console.log(c.textContent);
+             });*/
         });
     }); //btn next
     
@@ -648,21 +691,26 @@ var afficheS = [
         
         //Clic image generation trailer
         $("#sliderSeries ul li img").click(function(){
-            console.log($(this).attr("src"));
                     for (i=0 ; i < afficheS.length; i++) {
                         if ($(this).attr("src") == afficheS[i].src) {
                             $("#description2").html(" ");
-                            $("#description2").append("<iframe width='560' height='315' src='"+afficheS[i].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='infos'><h4 id='filmName'>"+afficheS[i].title+"</h4><p><span>Story Line: </span>"+afficheS[i].about+"</p><p><span>Release on: </span>"+afficheS[i].date+"</p><p><span>Genres: </span>"+afficheS[i].genre+"</p><p><span>Price: </span>"+afficheS[i].price+"</p></div>"
+                            $("#description2").append("<iframe width='560' height='315' src='"+afficheS[i].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='infos'><h4 id='filmName'>"+afficheS[i].title+"</h4><p><span>Story Line: </span>"+afficheS[i].about+"</p><p><span>Release on: </span>"+afficheS[i].date+"</p><p><span>Genres: </span>"+afficheS[i].genre+"</p><p><span>Price: </span>"+afficheS[i].price+"</p><p id='add'>"+afficheS[i].add+"</p></div>"
                             );
                         }
 
                     }
+            /*$(".add").click(function() {
+                let p = $(this).parent();
+                let c = p[0].childNodes[0];
+                console.log(c.textContent);
+             });*/
         });
 
     }); //btn prev
   
   //fini le slider  
 });
+
 
 
 
@@ -728,7 +776,15 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+    $("#basketIcon").click(function() {
+        $("#panier").css('display','block');
+    });
 
+    $("#basketIcon").dblclick(function() {
+        $("#panier").css('display','none');
+    });
+});
 
 
 

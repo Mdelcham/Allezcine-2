@@ -18,6 +18,73 @@ h2 {
   margin-left: 0 !important;
   margin-right: 0 !important; }
 
+/*----PANIER-----*/
+.fa-shopping-basket {
+  position: absolute;
+  right: 2vw;
+  top: 7vh;
+  width: 30px !important;
+  height: auto; }
+  .fa-shopping-basket path {
+    color: #fff !important; }
+
+#counter {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #33BF3A;
+  position: absolute;
+  right: 1.5vw;
+  top: 10vh;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  color: #fff;
+  padding-top: 4px; }
+
+#panier {
+  display: none;
+  z-index: 999;
+  width: 20vw;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  right: 0; }
+  #panier .titleH3 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 2rem;
+    color: #33BF3A;
+    font-weight: bold;
+    border-bottom: 2px solid #33BF3A; }
+  #panier .product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 1px solid #000; }
+    #panier .product img {
+      width: 10%;
+      height: auto; }
+    #panier .product .aboutProduct {
+      text-align: left; }
+  #panier .somme, #panier .total {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 !important; }
+    #panier .somme p, #panier .total p {
+      padding: 10px 10px;
+      margin: 0 !important; }
+    #panier .somme .livraisonPrice, #panier .total .livraisonPrice {
+      border-bottom: 1px solid #000; }
+  #panier #commande {
+    background-color: #33BF3A;
+    color: #fff;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0 !important; }
+
+/*----FUN DE PANIER------*/
 .lay {
   position: absolute;
   z-index: 12;

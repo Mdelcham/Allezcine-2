@@ -5,7 +5,9 @@
 	<title>AllezCineKids</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<script src="https://use.fontawesome.com/e7f841e227.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Oswald|Roboto" rel="stylesheet">
+	<!--<script src="https://use.fontawesome.com/413d22ea98.js"></script>-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -48,14 +50,39 @@
 		    	</ul>
 		  	</div>
 		</nav>
-				<div class="overlay">
+		
+		<div id="basketIcon"><i class="fas fa-shopping-basket"></i></div>
+		<div id="counter">0</div>
+            <div id="panier">
+                <p class="titleH3">MON PANIER</p>
+                <div class="product">
+                    <img src="./assets/images/films/academy.jpg" alt="">
+                    <p class="aboutProduct">
+                        BLA BLA TITRE <br/>
+                        bla bla description
+                    </p>
+                    <p class="quantity">0</p>
+                    <p class="priceProduct"> 10€</p>
+                </div>
+                <div class="somme">
+                    <p class="livraison">Livraison</p>
+                    <p class="livraisonPrice">2€</p>
+                </div>
+                <div class="total">
+                    <p class="total">TOTAL</p>
+                    <p class="totalPrice">12€</p>
+                </div>
+                <p id="commande">PASSER LA COMMANDE</p>
+            </div>
+		
+		<div class="overlay">
 			<h3>THE <span>LA</span>TEST <span>MO</span>VIES AND <span>SE</span>RIES FOR THE KIDS !</h3>
 			<h4>Je ne retomberai jamais en enfance,j'y suis toujours resté.</h4>
 			<p class="quote">Walt Disney</p>
 			<input id="play-video" type="button" value="WATCH TRAILER">
 		</div>
 	</div>
-	<div class="jumbotron">
+<div class="jumbotron">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 	    		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -123,7 +150,7 @@
        </div>
        <div id="description2"></div>
 </section>
-   <section id="contact" class="row">
+<section id="contact" class="row">
              <h2 class="title col-lg-10 col-md-10 col-sm-10 col-10 m-auto">CONTACT US</h2>
       <div class="col-lg-8 m-auto">
            <form action="" class="row">
@@ -281,15 +308,7 @@
     <script src="./assets/js/jquery-ui.min.js"></script>
     <script src="./assets/js/isotope.pkgd.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    
-    <script>
-        $(document).ready(function() {
-            $("#image").click(function() {
-              $( "#tonDiv" ).toggle( "blind", 500 );
-            });
 
-        });
-    </script>
 
 </body>
 </html>

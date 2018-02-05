@@ -28,6 +28,87 @@ h2{
     margin-right: 0 !important;
 }
 
+
+/*----PANIER-----*/    
+
+.fa-shopping-basket {
+    position: absolute;
+    right: 2vw;
+    top: 7vh;
+    width: 30px !important;
+    height: auto;
+    path {
+       color: #fff !important;
+    }
+}
+#counter {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: $color-jumbo;
+    position: absolute;
+    right: 1.5vw;
+    top: 10vh;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    color: #fff;
+    padding-top: 4px;
+}
+
+#panier {
+    display: none;
+    z-index: 999;
+    width: 20vw;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    .titleH3 {
+        font-family: $font-cond;
+        font-size: 2rem;
+        color: $color-jumbo;
+        font-weight: bold;
+        border-bottom: 2px solid $color-jumbo;
+    }
+    .product {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 10px;
+        border-bottom: 1px solid #000;
+        img {
+            width: 10%;
+            height: auto;
+        }
+        .aboutProduct {
+            text-align: left;
+        }
+    }
+    .somme, .total {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0 !important;
+        p {
+            padding: 10px 10px;
+            margin: 0 !important;
+        }
+        .livraisonPrice {
+            border-bottom: 1px solid #000;
+        }
+    }
+    #commande {
+        background-color: $color-jumbo;
+        color: #fff;
+        font-family: $font-cond;
+        font-size: 1.5rem;
+        width: 100%;
+        margin: 0 !important;
+    }
+}
+
+/*----FUN DE PANIER------*/
+        
 .lay{
   	position:absolute;
   	z-index:12;
