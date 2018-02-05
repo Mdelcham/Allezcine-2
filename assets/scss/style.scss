@@ -665,7 +665,7 @@ h3{
     }
 	
 }
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+@media only screen and (min-device-width : 350px) and (max-device-width : 780px) {
 	nav{
 		.nav-link{
 				background-color: transparent !important;
@@ -681,7 +681,53 @@ h3{
 	}
 	.overlay{
 		h3{
-			margin-top: -100px !important;
+			margin-top: -90px !important;
+		}
+		h4, .quote{
+			font-size: 18px !important;
+			font-weight: bold;
+		}
+		#play-video{
+			display: none;
+		}
+	}
+	#deroule{
+		background-color: transparent;
+		box-shadow: none;
+		text-align: center;
+	}
+	.jumbotron{
+		#border{
+			font-size: 25px;
+
+		}
+	}
+	#description, #description2{
+		font-size: 20px;
+	}
+	.modal-content{
+		p{
+			font-size: 25px !important;
+		}
+		#forgot{
+			font-size: 20px !important;
+			top: 66%;
+			right: 40% !important;
+		}
+		#connect{
+
+		}
+		#btns{
+			width: 60%;
+			#signIn, #new-account{
+				font-size: 20px !important;
+
+			}
+		}
+		#contact{
+			.submit{
+				font-size: 25px;
+			}
 		}
 	}
 }

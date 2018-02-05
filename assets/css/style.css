@@ -520,7 +520,7 @@ h3 span {
 
   input[type="text"], input[type="email"] {
     width: 49%; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-device-width: 350px) and (max-device-width: 780px) {
   nav .nav-link {
     background-color: transparent !important; }
   nav .search {
@@ -532,6 +532,35 @@ h3 span {
     background-color: transparent !important; }
 
   .overlay h3 {
-    margin-top: -100px !important; } }
+    margin-top: -90px !important; }
+  .overlay h4, .overlay .quote {
+    font-size: 18px !important;
+    font-weight: bold; }
+  .overlay #play-video {
+    display: none; }
+
+  #deroule {
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center; }
+
+  .jumbotron #border {
+    font-size: 25px; }
+
+  #description, #description2 {
+    font-size: 20px; }
+
+  .modal-content p {
+    font-size: 25px !important; }
+  .modal-content #forgot {
+    font-size: 20px !important;
+    top: 66%;
+    right: 40% !important; }
+  .modal-content #btns {
+    width: 60%; }
+    .modal-content #btns #signIn, .modal-content #btns #new-account {
+      font-size: 20px !important; }
+  .modal-content #contact .submit {
+    font-size: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
