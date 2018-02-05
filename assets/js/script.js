@@ -546,7 +546,7 @@ var afficheS = [
         },
         {
             title: 'Ultimate Spiderman',
-            src: "assets/images/films/series/spider.jpg",
+            src: "assets/images/series/spider.jpg",
             date: 1980,
             genre: "scifi",
             url: "https://www.youtube.com/embed/nyMKJcnWh4k",
@@ -788,7 +788,212 @@ $(document).ready(function() {
 
 
 
+//BOUTIQUE
+$(document).ready(function() {
+// load images et descriptions
+var afficheX = [
+        {
+            title: 'Harry Potter - POP!',
+            src: "assets/images/boutique/harry-pop.jpg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Hagrid - POP!',
+            src: "assets/images/boutique/hagrid-pop.jpg",
+            price: "16.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Sirius Black - POP!',
+            src: "assets/images/boutique/sirius-pop.jpg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Albus Dumbledore - POP!',
+            src: "assets/images/boutique/dumbledore-pop.jpg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Remus Lupin - POP!',
+            src: "assets/images/boutique/lupin-pop.jpg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Hermione Granger - POP!',
+            src: "assets/images/boutique/hermione-pop.jpg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Dolores Ombrage - POP!',
+            src: "assets/images/boutique/ombrage-pop.jpg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Alastor Maugrey - POP!',
+            src: "assets/images/boutique/maugrey-pop.jpg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Ginny Weasley - POP!',
+            src: "assets/images/boutique/ginny.jpeg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Lucius Malefoy - POP!',
+            src: "assets/images/boutique/lucius.jpeg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Sully - POP!',
+            src: "assets/images/boutique/sully.jpeg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Buzz - POP!',
+            src: "assets/images/boutique/buzz.jpg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Woody - POP!',
+            src: "assets/images/boutique/woody.jpg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Goku SSJ Blue - POP!',
+            src: "assets/images/boutique/goku.jpeg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        {
+            title: 'Vegeta - POP!',
+            src: "assets/images/boutique/vegeta.jpeg",
+            price: "13.99€",
+            genre: "Figurine"
+        },
+        
+];
+    
+    
+    //Slider images generator
+    $("#sliderGoodies ul").html(function(){
+       for( var i=0 ; i < afficheX.length; i++) {
+            $("#sliderGoodies ul").append("<li><img src="+afficheX[i].src+" alt=''></li>");
+        }
+    });
 
+//First description display
+    $("#description3").html(function() {
+        $("#description3").append("<div class='infos'><h4 id='filmName'>"+afficheX[0].title+"</h4><p><span>Genre: </span>" +afficheX[0].genre+"</p><p><span>Price: </span>"+afficheX[0].price+"</p></div>"
+        );
+    });
+
+//Clic image generation trailer
+    $("#sliderGoodies ul li img").click(function(){
+                for (i=0 ; i < afficheX.length; i++) {
+                    if ($(this).attr("src") == afficheX[i].src) {
+                        $("#description3").html(" ");
+                        $("#description3").append("<div class='infos'><h4 id='filmName'>"+afficheX[i].title+"</h4><p><span>Genre: </span>"+afficheX[i].genre+"</p><p><span>Price: </span>"+afficheX[i].price+"</p></div>"
+                        );
+                    }
+                    
+                }
+    });
+    
+// slider buttons    
+    let carousel = $("#sliderGoodies ul");
+    let carouselChild = carousel.find('li');
+    let count = 0;
+    let canClick = true;
+    let itemWidth = carouselChild.first().width(true);
+    let lastItem;
+    
+     //Set Carousel width so it won't wrap
+    carousel.width(itemWidth * carouselChild.length);
+    
+    //Set the event handlers for buttons
+    $("#next3").click(function(){
+         if (canClick){
+             canClick = false;
+             count++;
+             
+             //Animate the slider to left as item width
+             carousel.stop(false,true).animate({
+                 left : '-='+itemWidth
+             },600,function(){
+                 //Find the first item and append it as the last item.
+                 lastItem = carousel.find('li:first');
+                 lastItem.remove().appendTo(carousel);
+                 carousel.css('left', 0);
+                 canClick = true;
+             });
+         }
+        afficheX.push(afficheX[0]);
+        afficheX.shift(afficheX[0]);
+        
+        //Clic image generation trailer
+        $("#sliderGoodies ul li img").click(function(){
+            console.log($(this).attr("src"));
+                    for (i=0 ; i < afficheX.length; i++) {
+                        if ($(this).attr("src") == afficheX[i].src) {
+                            $("#description3").html(" ");
+                                $("#description3").append("<div class='infos'><h4 id='filmName'>"+afficheX[i].title+"</h4><p><span>Genre: </span>"+afficheX[i].genre+"</p><p><span>Price: </span>"+afficheX[i].price+"</p></div>"
+                            );
+                        }
+
+                    }
+        });
+    }); //btn next
+    
+    $("#prev3").click(function(){
+         if (canClick){
+             canClick = false;
+             count--;
+             
+             //Find the last item and prepend it as the first item.
+             lastItem = carousel.find('li:last');
+             lastItem.remove().prependTo(carousel);
+             carousel.css('left', -itemWidth);
+             
+             //Animate the slider to right as item width
+             carousel.finish(true).animate({
+                 left: '+='+itemWidth
+             },300, function(){
+                 canClick = true;
+                 
+             });
+         }
+        var x = afficheX.pop();
+        afficheX.unshift(x);
+        
+        //Clic image generation trailer
+        $("#sliderGoodies ul li img").click(function(){
+            console.log($(this).attr("src"));
+                    for (i=0 ; i < afficheX.length; i++) {
+                        if ($(this).attr("src") == afficheX[i].src) {
+                            $("#description3").html(" ");
+                            $("#description3").append("<div class='infos'><h4 id='filmName'>"+afficheX[i].title+"</h4><p><span>Story Line: </span>"+afficheX[i].about+"</p><p><span>Release on: </span>"+afficheX[i].date+"</p><p><span>Genres: </span>"+afficheX[i].genre+"</p><p><span>Price: </span>"+afficheX[i].price+"</p></div>"
+                            );
+                        }
+
+                    }
+        });
+
+    }); //btn prev
+  
+  //fini le slider  
+});
 
 
 

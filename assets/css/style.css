@@ -370,12 +370,12 @@ h3 span {
         width: 155px !important;
         height: 240px; }
 
-#description, #description2 {
+#description, #description2, #description3 {
   display: flex;
   background-color: #000;
   padding: 10px 143px 10px 143px;
   border-top: 3px solid #fff; }
-  #description .infos, #description2 .infos {
+  #description .infos, #description2 .infos, #description3 .infos {
     padding: 10px 0 0 20px;
     color: #fff; }
 
@@ -532,6 +532,44 @@ h3 span {
         #footer .seventh .icon i:nth-child(1) {
           padding-right: 10px; }
 
+#goodies, #series {
+  /*border: 1px solid red;*/
+  height: 240px;
+  display: flex; }
+  #goodies #prev, #goodies #prev2, #goodies #prev3, #series #prev, #series #prev2, #series #prev3 {
+    width: 150px;
+    height: 240px;
+    background-color: #33BF3A;
+    color: #fff;
+    border: none;
+    cursor: pointer; }
+  #goodies #next, #goodies #next2, #goodies #next3, #series #next, #series #next2, #series #next3 {
+    width: 150px;
+    height: 240px;
+    background-color: #33BF3A;
+    color: #fff;
+    border: none;
+    cursor: pointer; }
+  #goodies #sliderGoodies, #goodies #sliderSeries, #series #sliderGoodies, #series #sliderSeries {
+    position: relative;
+    /*border: 1px solid yellow;*/
+    display: flex;
+    justify-content: space-between;
+    width: 84vw;
+    height: 240px;
+    overflow: hidden; }
+    #goodies #sliderGoodies ul, #goodies #sliderSeries ul, #series #sliderGoodies ul, #series #sliderSeries ul {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex; }
+      #goodies #sliderGoodies ul img, #goodies #sliderSeries ul img, #series #sliderGoodies ul img, #series #sliderSeries ul img {
+        width: 250px !important;
+        height: 250px; }
+
 /*-----------------------*/
 @media all and (max-width: 1515px) {
   form {
@@ -597,5 +635,57 @@ h3 span {
       padding-right: 50px; }
   nav .nav-item a {
     background-color: transparent !important; } }
+/*---------max responsive----------*/
+@media only screen and (min-device-width: 350px) and (max-device-width: 780px) {
+  nav .nav-link {
+    background-color: transparent !important; }
+  nav .search {
+    width: 200px !important;
+    margin-left: 365px !important; }
+    nav .search input {
+      padding-right: 50px; }
+  nav .nav-item a {
+    background-color: transparent !important; }
+
+  .overlay h3 {
+    margin-top: -90px !important; }
+  .overlay h4, .overlay .quote {
+    font-size: 18px !important;
+    font-weight: bold; }
+  .overlay #play-video {
+    display: none; }
+
+  #deroule {
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center; }
+
+  .jumbotron #border {
+    font-size: 25px; }
+
+  #description, #description2, #description3 {
+    font-size: 20px; }
+
+  .modal-content p {
+    font-size: 25px !important; }
+  .modal-content #forgot {
+    font-size: 20px !important;
+    top: 66%;
+    right: 40% !important; }
+  .modal-content #btns {
+    width: 60%; }
+    .modal-content #btns #signIn, .modal-content #btns #new-account {
+      font-size: 20px !important; }
+  .modal-content #contact .submit {
+    font-size: 25px; }
+
+  #sliderFilms, #sliderSeries {
+    width: 620px !important; }
+
+  #prev, #prev2, #prev3 {
+    width: 180px !important; }
+
+  #next, #next2, #next3 {
+    width: 180px !important; } }
 
 /*# sourceMappingURL=style.css.map */
